@@ -1,0 +1,12 @@
+{
+  "roots": ["<rootDir>/tests", "<rootDir>/src"],
+  "preset": "ts-jest",
+  "transform": {
+      "^.+\\.ts?$": "ts-jest"
+  },
+  "testPathIgnorePatterns": ["/node_modules/"],
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$",
+  "moduleFileExtensions": ["ts", "js"],
+  "testEnvironment": "node",
+  "setupFiles": ["<rootDir>/tests/helpers/populateEnvironmentVariables.ts"]
+}
